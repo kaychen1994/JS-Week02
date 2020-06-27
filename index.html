@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-Week02</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="all.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+        <a class="navbar-brand" href="#">Watch Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Product <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Gallery</a>
+                <a class="nav-item nav-link" href="#">About</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid my-5">
+        <h2 class="pt-5 pb-3">商品列表</h2>
+        <div class="row">
+            <div class="col-md-3 mb-2">
+                <div class="list-group sticky-top">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary active">全系列錶款</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">經典錶款</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">機械錶款</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">電子錶款</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">智慧錶款</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+    
+                <div id="app" class="card-columns">
+                    <!-- display card -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-muted py-2">
+        <p class="text-center">圖片取自 unsplash </p>
+        <p class="text-center">無商業用途，僅供學習使用</p>
+    </footer>
+</body>
+
+</html>
