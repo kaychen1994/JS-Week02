@@ -28,7 +28,7 @@ const obj = {
                     <h3 class="card-title p-3">${ item.title }</h3>
                     <p class="card-text p-3">${ item.content }</p>
                     <div class="d-flex justify-content-between p-3">
-                        <div class="d-flex justify-content-end">
+                        <div class="d-flex justify-content-end align-items-center">
                             <span class="lineThrough">NT ${item.origin_price} 元</span>
                             <span class="text-red ml-4">NT ${item.price} 元</span>
                         </div>
