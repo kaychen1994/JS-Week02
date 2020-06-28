@@ -23,12 +23,18 @@ const obj = {
         products.forEach(function (item) {
             string += `
             <div class="card mb-5">
-                <img src="${ item.imageUrl[0] }" class="card-img-top" style="height: 300px; background-size: cover; background-position: center;>
+                <img class="card-img-top product-img" style="background-image: url(${ item.imageUrl[0]});>
                 <div class="card-body">
                     <h3 class="card-title p-3">${ item.title }</h3>
                     <p class="card-text p-3">${ item.content }</p>
-                    <div class="text-right p-3" style="color:red;">
-                        NT ${item.price} 元
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="d-flex justify-content-end">
+                            <span class="lineThrough">NT ${item.origin_price} 元</span>
+                            <span class="text-red ml-4">NT ${item.price} 元</span>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-danger px-3">立即搶購</a>
+                        </div>
                     </div>
                 </div>
             </div>
